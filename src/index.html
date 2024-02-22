@@ -11,24 +11,28 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-mainFontFamily">
-  <header>
-    <div>
-      <img src="img/logo.svg" alt="logo strony">
-      <h1>Krzystof Kalinowski</h1>
-      <p>FROONTEND DEVELOPER</p>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resumes"><i></i>Resumes</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<body class="font-mainFontFamily bg-backgroundColor text-white">
+  <header class="flex">
+    <div class="flex gap-x-4">
+      <img src="img/logo.svg" alt="logo strony" class="h-10 w-10">
+      <div>
+        <h1 class="text-xl">Krzystof Kalinowski</h1>
+        <p class="text-xs">FRONTEND DEVELOPER</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a download href="#"><i></i>Resumes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button></button>
   </header>
   <main>
-    <section id="about">
+    <section id="top">
       <h2>My name is Krzysiek and I’m an aspiring Frontend developer.</h2>
       <p>You might be interested in checking the list of my skills. Don’t forget to have a glimpse at my projects. I’m
         looking for a new challenges so if you have one - contact me 😊</p>
@@ -37,17 +41,132 @@
     </section>
     <section id="skills">
       <h2>MY SKILLS</h2>
-      <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do below!</p>
+      <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do
+        below!</p>
       <article>
         <img>
-        <h3></h3>
+        <h3>Working knowledge</h3>
         <ul>
-          <li></li>
+          <li>Semantic HTML</li>
+          <li>Forms</li>
+          <li>Flexbox</li>
+          <li>CSS Grid</li>
+          <li>SASS</li>
+          <li>Tailwind</li>
+          <li>JS: Local storage and cookies</li>
+          <li>JS: DOM manipulation</li>
+          <li>SEO</li>
+          <li>Git</li>
+          <li>Parcel</li>
+          <li>Figma</li>
+        </ul>
+      </article>
+      <article>
+        <img>
+        <h3>Know something about</h3>
+        <ul>
+          <li>CSS animations</li>
+          <li>JavaSript ES6 + features</li>
+          <li>JS: working with API</li>
+          <li>NPM scripts</li>
+          <li>PWA</li>
+          <li>Accessibility</li>
+        </ul>
+      </article>
+      <article>
+        <img>
+        <h3>Want to learn</h3>
+        <ul>
+          <li>React</li>
+          <li>Node</li>
+          <li>PHP</li>
+          <li>Typescript</li>
+          <li>Gatsby</li>
         </ul>
       </article>
     </section>
+    <section id="projects">
+      <h2>Recent projects</h2>
+      <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of
+        my accomplishments so far.</p>
+      <div>
+        <article>
+          <h3>simple-editor</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
+          <a href="#">View demo</a>
+          <a href="#">Source code</a>
+        </article>
+        <article>
+          <h3>simple-editor</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
+          <a href="#">View demo</a>
+          <a href="#">Source code</a>
+        </article>
+        <article>
+          <h3>simple-editor</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
+          <a href="#">View demo</a>
+          <a href="#">Source code</a>
+        </article>
+        <article>
+          <h3>simple-editor</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
+          <a href="#">View demo</a>
+          <a href="#">Source code</a>
+        </article>
+        <article>
+          <h3>simple-editor</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
+          <a href="#">View demo</a>
+          <a href="#">Source code</a>
+        </article>
+      </div>
+    </section>
+    <section id="about">
+      <h2>After hours</h2>
+      <p>Outside of my regular working hours, I delve into an array of activities. Here's a glimpse into how I spend my
+        after-hours.</p>
+      <div>
+        <article>
+          <img src="#" alt="calisthenics">
+          <h3>Calisthenics</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+        </article>
+        <article>
+          <img src="#" alt="video games">
+          <h3>Video games</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+        </article>
+        <article>
+          <img src="#" alt="family">
+          <h3>Family</h3>
+          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
+            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+        </article>
+      </div>
+    </section>
   </main>
-  <h1 class="text-xl text-accentColor">Hello world</h1>
+  <footer id="contact">
+    <h2>Let’s work together</h2>
+    <p>I’m open for new opportunities.  If you have one for me we should talk!</p>
+    <button>krzykalinowski@gmail.com</button>
+    <p>or find me</p>
+    <div>
+      <i></i><i></i><i></i><i></i><i></i>
+    </div>
+  </footer>
   <script type="module" src="scripts/main.js"></script>
 </body>
 

@@ -12,6 +12,12 @@ module.exports = {
       fontFamily: {
         mainFontFamily: ['DM Sans', 'sans-serif'],
       },
+      backgroundImage: {
+        'hamburger': "url('img/hamburger.svg')",
+      },
+      spacing: {
+        'contentWidth': '1312px',
+      }
     },
   },
   plugins: [],

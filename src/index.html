@@ -11,37 +11,42 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-mainFontFamily bg-backgroundColor text-white max-w-contentWidth m-auto">
+<body class="font-mainFontFamily bg-backgroundColor text-textColor max-w-contentWidth m-auto px-6">
   <header class="sticky top-0 pt-20 z-1 md:pt-0 md:h-20 md:flex md:justify-end md:items-center bg-backgroundColor">
     <div class="absolute left-4 top-5 flex gap-x-4">
       <img src="img/logo.svg" alt="logo strony" class="h-10 w-10">
       <div>
-        <h1 class="text-xl">Krzystof Kalinowski</h1>
-        <p class="text-xs">FRONTEND DEVELOPER</p>
+        <h1 class="text-xl text-primaryColor">Krzystof Kalinowski</h1>
+        <p class="text-xs text-secondTextColor">FRONTEND DEVELOPER</p>
       </div>
     </div>
     <button class="absolute right-4 top-6 z-2 md:hidden hamburger--js"><img src="img/hamburger.svg" class="w-8 h-8 z-2"></img></button>
     <nav class="p-4 hidden md:block z-2 menu--js">
       <ul class="md:flex md: gap-x-10">
-        <li class="mb-2"><a href="#about">About</a></li>
-        <li class="mb-2"><a href="#skills">Skills</a></li>
-        <li class="mb-2"><a href="#projects">Projects</a></li>
-        <li class="mb-2"><a download href="#"><i></i>Resumes</a></li>
+        <li class="mb-2 hover:text-primaryColor"><a href="#about">About</a></li>
+        <li class="mb-2 hover:text-primaryColor"><a href="#skills">Skills</a></li>
+        <li class="mb-2 hover:text-primaryColor"><a href="#projects">Projects</a></li>
+        <li class="mb-2 hover:text-primaryColor"><a download href="#"><i></i>Resumes</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
-    <section id="top">
-      <h2>My name is Krzysiek and I’m an aspiring Frontend developer.</h2>
-      <p>You might be interested in checking the list of my skills. Don’t forget to have a glimpse at my projects. I’m
-        looking for a new challenges so if you have one - contact me 😊</p>
-      <a href="#contact"></a>
-      <a href="#skills"></a>
+    <section id="top" class="flex flex-col items-grid gap-y-5 py-5 lg:grid-cols-3 lg:gap-x-36 lg:py-16">
+      <div class="lg:col-span-2">
+        <h2 class="text-bold text-2xl mb-4 lg:text-5xl lg:leading-snug">My name is Krzysiek and I’m an aspiring <span class="text-primaryColor">Frontend developer.</span></h2>
+        <p class="text-secondTextColor mb-8 lg:text-2xl">You might be interested in checking the list of my <a href="#skills" class="text-white">skills</a>. Don’t forget to have a glimpse at my <a href="#projects" class="text-white">projects</a>. I’m
+          looking for a new challenges so if you have one - <a href="#contact" class="text-white">contact</a> me 😊</p>
+        <div class="flex flex-col flex-inline gap-y-4">
+          <a href="#contact" class="py-2 px-6 bg-primaryColor text-buttonColor rounded-2xl flex gap-x-3"><img src="img/chat-icon.svg" alt="chat icon" aria-label="hidden">Get in touch</a>
+          <a href="#skills" class="py-2 px-6 bg-buttonColor text-primaryColor rounded-2xl border-borderColor border-2 flex gap-x-3"><img src="img/user-icon.svg" alt="user icon" aria-label="hidden">Get to know me</a>
+        </div>
+      </div>
+      <img src="img/krzysztof-kalinowski.jpg" alt="Krzysztof Kalinowski" class="rounded-xl rounded-tr-imgRadius order-first">
     </section>
-    <section id="skills">
-      <h2>MY SKILLS</h2>
-      <p>I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do
+    <section id="skills" class="py-14">
+      <h2 class="text-xl text-bold text-secondTextColor">MY SKILLS</h2>
+      <p class="text-2xl text-medium">I've picked up some cool skills along the way, and I'm excited to share them with you. Check out what I can do
         below!</p>
       <article>
         <img>

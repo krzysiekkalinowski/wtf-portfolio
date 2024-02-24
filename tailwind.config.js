@@ -5,9 +5,11 @@ module.exports = {
     extend: {
       colors: {
         backgroundColor: '#020916',
-        accentColor: '#CEFF7E',
-        textColors: '#fff',
+        primaryColor: '#CEFF7E',
+        textColor: '#fff',
         secondTextColor: '#9CA3AF',
+        buttonColor: '#020916',
+        borderColor: '#1F2937',
       },
       fontFamily: {
         mainFontFamily: ['DM Sans', 'sans-serif'],
@@ -17,7 +19,10 @@ module.exports = {
       },
       spacing: {
         'contentWidth': '1312px',
-      }
+      },
+      borderRadius: {
+        'imgRadius': '50%',
+      },
     },
   },
   plugins: [],

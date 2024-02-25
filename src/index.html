@@ -1,209 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WTF Portfolio</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WTF Portfolio</title>
-  <link href="./index.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&display=swap" rel="stylesheet">
-</head>
-
-<body class="font-mainFontFamily bg-backgroundColor text-textColor max-w-contentWidth m-auto px-6">
-  <header class="sticky top-0 pt-20 z-1 md:pt-0 md:h-20 md:flex md:justify-end md:items-center bg-backgroundColor">
-    <div class="absolute left-4 top-5 flex gap-x-4">
-      <img src="img/logo.svg" alt="logo strony" class="h-10 w-10">
-      <div>
-        <h1 class="text-xl text-primaryColor">Krzystof Kalinowski</h1>
-        <p class="text-xs text-secondTextColor">FRONTEND DEVELOPER</p>
-      </div>
-    </div>
-    <button class="absolute right-4 top-6 z-2 md:hidden hamburger--js"><img src="img/hamburger.svg"
-        class="w-8 h-8 z-2"></button>
-    <nav class="p-4 hidden md:block z-2 menu--js">
-      <ul class="md:flex md: gap-x-10">
-        <li class="mb-2 hover:text-primaryColor"><a href="#about">About</a></li>
-        <li class="mb-2 hover:text-primaryColor"><a href="#skills">Skills</a></li>
-        <li class="mb-2 hover:text-primaryColor"><a href="#projects">Projects</a></li>
-        <li class="mb-2 hover:text-primaryColor"><a download href="#"><i></i>Resumes</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="top" class="flex flex-col items-grid gap-y-5 py-5 lg:grid-cols-3 lg:gap-x-36 lg:py-16">
-      <div class="lg:col-span-2">
-        <h2 class="font-bold text-2xl mb-4 lg:text-5xl lg:leading-snug">My name is Krzysiek and I’m an aspiring <span
-            class="text-primaryColor">Frontend developer.</span></h2>
-        <p class="text-secondTextColor mb-8 lg:text-2xl">You might be interested in checking the list of my <a
-            href="#skills" class="text-white">skills</a>. Don’t forget to have a glimpse at my <a href="#projects"
-            class="text-white">projects</a>. I’m
-          looking for a new challenges so if you have one - <a href="#contact" class="text-white">contact</a> me 😊</p>
-        <div class="flex flex-col flex-inline gap-y-4">
-          <a href="#contact" class="py-2 px-6 bg-primaryColor text-buttonColor rounded-2xl flex gap-x-3"><img
-              src="img/chat-icon.svg" alt="chat icon" aria-label="hidden">Get in touch</a>
-          <a href="#skills"
-            class="py-2 px-6 bg-buttonColor text-primaryColor rounded-2xl border-borderColor border-2 flex gap-x-3"><img
-              src="img/user-icon.svg" alt="user icon" aria-label="hidden">Get to know me</a>
+  <body
+    class="font-mainFontFamily bg-backgroundColor text-textColor max-w-contentWidth m-auto px-6"
+  >
+    <header
+      class="sticky top-0 pt-20 z-1 md:pt-0 md:h-20 md:flex md:justify-end md:items-center bg-backgroundColor"
+    >
+      <div class="absolute left-4 top-5 flex gap-x-4">
+        <img src="img/logo.svg" alt="logo strony" class="h-10 w-10" />
+        <div>
+          <h1 class="text-xl text-primaryColor">Krzystof Kalinowski</h1>
+          <p class="text-xs text-secondTextColor">FRONTEND DEVELOPER</p>
         </div>
       </div>
-      <img src="img/krzysztof-kalinowski.jpg" alt="Krzysztof Kalinowski"
-        class="rounded-xl rounded-tr-imgRadius order-first">
-    </section>
-    <section id="skills" class="py-14">
-      <h2 class="text-xl font-bold text-secondTextColor">MY SKILLS</h2>
-      <p class="text-2xl">I've picked up some cool skills along the way, and I'm excited to share them with
-        you. Check out what I can do
-        below!</p>
-      <article class="rounded-xl p-5 gap-y-10 flex flex-col bg-articleGradientBackground">
-        <img src="img/traingle.svg" alt="triangle" class="w-44 h-40">
-        <div class="flex flex-col gap-y-3">
-          <hr class="border-primaryColor">
-          <h3 class="text-2xl font-bold">Working knowledge</h3>
-          <ul class="list-none relative text-sm">
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Semantic HTML</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Forms</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Flexbox</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">CSS Grid</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">SASS</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Tailwind</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JS: Local storage and cookies</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JS: DOM manipulation</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">SEO</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Git</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Parcel</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Figma</li>
-          </ul>
+      <button class="absolute right-4 top-6 z-2 md:hidden hamburger--js">
+        <img src="img/hamburger.svg" class="w-8 h-8 z-2" />
+      </button>
+      <nav class="p-4 hidden md:block z-2 menu--js">
+        <ul class="md:flex md: gap-x-10">
+          <li class="mb-2 hover:text-primaryColor">
+            <a href="#about">About</a>
+          </li>
+          <li class="mb-2 hover:text-primaryColor">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="mb-2 hover:text-primaryColor">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="mb-2 hover:text-primaryColor">
+            <a download href="#"><i></i>Resumes</a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="top"
+        class="flex flex-col items-grid gap-y-5 py-5 lg:grid-cols-3 lg:gap-x-36 lg:py-16"
+      >
+        <div class="lg:col-span-2">
+          <h2 class="font-bold text-2xl mb-4 lg:text-5xl lg:leading-snug">
+            My name is Krzysiek and I’m an aspiring
+            <span class="text-primaryColor">Frontend developer.</span>
+          </h2>
+          <p class="text-secondTextColor mb-8 lg:text-2xl">
+            You might be interested in checking the list of my
+            <a href="#skills" class="text-white">skills</a>. Don’t forget to
+            have a glimpse at my
+            <a href="#projects" class="text-white">projects</a>. I’m looking for
+            a new challenges so if you have one -
+            <a href="#contact" class="text-white">contact</a> me 😊
+          </p>
+          <div class="flex flex-col flex-inline gap-y-4">
+            <a
+              href="#contact"
+              class="py-2 px-6 bg-primaryColor text-buttonColor rounded-2xl flex gap-x-3"
+              ><img
+                src="img/chat-icon.svg"
+                alt="chat icon"
+                aria-label="hidden"
+              />Get in touch</a
+            >
+            <a
+              href="#skills"
+              class="py-2 px-6 bg-buttonColor text-primaryColor rounded-2xl border-borderColor border-2 flex gap-x-3"
+              ><img
+                src="img/user-icon.svg"
+                alt="user icon"
+                aria-label="hidden"
+              />Get to know me</a
+            >
+          </div>
         </div>
-      </article>
-      <article class="rounded-xl p-5 gap-y-10 flex flex-col bg-articleGradientBackground">
-        <img src="img/circle.svg" alt="triangle" class="w-44 h-40">
-        <div class="flex flex-col gap-y-3">
-          <hr class="border-primaryColor">
-          <h3 class="text-2xl font-bold">Know something about</h3>
-          <ul class="list-none relative text-sm">
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">CSS animations</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JavaSript ES6 + features</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JS: working with API</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">NPM scripts</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">PWA</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Accessibility</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JS: Local storage and cookies</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JS: DOM manipulation</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">SEO</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Git</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Parcel</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Figma</li>
-          </ul>
-        </div>
-      </article>
-      <article class="rounded-xl p-5 gap-y-10 flex flex-col bg-articleGradientBackground">
-        <img src="img/hexagon.svg" alt="triangle" class="w-44 h-40">
-        <div class="flex flex-col gap-y-3">
-          <hr class="border-primaryColor">
-          <h3 class="text-2xl font-bold">Want to learn</h3>
-          <ul class="list-none relative text-sm">
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">React</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Node</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">PHP</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Typescript</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Gatsby</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Accessibility</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JS: Local storage and cookies</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">JS: DOM manipulation</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">SEO</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Git</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Parcel</li>
-            <li class="after:content-['-'] after:left-0 after:absolute ml-3">Figma</li>
-          </ul>
-        </div>
-      </article>
-    </section>
-    <section id="projects">
-      <h2>Recent projects</h2>
-      <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of
-        my accomplishments so far.</p>
-      <div>
-        <article>
-          <h3>simple-editor</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
-          <a href="#">View demo</a>
-          <a href="#">Source code</a>
-        </article>
-        <article>
-          <h3>simple-editor</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
-          <a href="#">View demo</a>
-          <a href="#">Source code</a>
-        </article>
-        <article>
-          <h3>simple-editor</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
-          <a href="#">View demo</a>
-          <a href="#">Source code</a>
-        </article>
-        <article>
-          <h3>simple-editor</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
-          <a href="#">View demo</a>
-          <a href="#">Source code</a>
-        </article>
-        <article>
-          <h3>simple-editor</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-          <span>HTML</span><span>CSS</span><span>Tailwind</span><span>JS</span>
-          <a href="#">View demo</a>
-          <a href="#">Source code</a>
-        </article>
+        <img
+          src="img/krzysztof-kalinowski.jpg"
+          alt="Krzysztof Kalinowski"
+          class="rounded-xl rounded-tr-imgRadius order-first"
+        />
+      </section>
+      <section id="skills" class="py-14 flex flex-col gap-y-10">
+        <div class="flex flex-col gap-y-4">
+        <h2 class="text-xl font-bold text-secondTextColor">MY SKILLS</h2>
+        <p class="text-2xl">
+          I've picked up some cool skills along the way, and I'm excited to
+          share them with you. Check out what I can do below!
+        </p>
       </div>
-    </section>
-    <section id="about">
-      <h2>After hours</h2>
-      <p>Outside of my regular working hours, I delve into an array of activities. Here's a glimpse into how I spend my
-        after-hours.</p>
-      <div>
-        <article>
-          <img src="#" alt="calisthenics">
-          <h3>Calisthenics</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-        </article>
-        <article>
-          <img src="#" alt="video games">
-          <h3>Video games</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-        </article>
-        <article>
-          <img src="#" alt="family">
-          <h3>Family</h3>
-          <p>Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet
-            nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-        </article>
-      </div>
-    </section>
-  </main>
-  <footer id="contact">
-    <h2>Let’s work together</h2>
-    <p>I’m open for new opportunities. If you have one for me we should talk!</p>
-    <button>krzykalinowski@gmail.com</button>
-    <p>or find me</p>
-    <div>
-      <i></i><i></i><i></i><i></i><i></i>
-    </div>
-  </footer>
-  <script type="module" src="scripts/main.js"></script>
-</body>
-
+        <div class="flex flex-col gap-y-4">
+          <article
+            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+          >
+            <img src="img/traingle.svg" alt="triangle" class="w-44 h-40" />
+            <div class="flex flex-col gap-y-3">
+              <hr class="border-primaryColor" />
+              <h3 class="text-2xl font-bold">Working knowledge</h3>
+              <ul class="list-none relative text-sm">
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Semantic HTML
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Forms
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Flexbox
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  CSS Grid
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  SASS
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Tailwind
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JS: Local storage and cookies
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JS: DOM manipulation
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  SEO
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Git
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Parcel
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Figma
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+          >
+            <img src="img/circle.svg" alt="triangle" class="w-44 h-40" />
+            <div class="flex flex-col gap-y-3">
+              <hr class="border-primaryColor" />
+              <h3 class="text-2xl font-bold">Know something about</h3>
+              <ul class="list-none relative text-sm">
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  CSS animations
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JavaSript ES6 + features
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JS: working with API
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  NPM scripts
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  PWA
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Accessibility
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JS: Local storage and cookies
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JS: DOM manipulation
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  SEO
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Git
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Parcel
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Figma
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article
+            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+          >
+            <img src="img/hexagon.svg" alt="triangle" class="w-44 h-40" />
+            <div class="flex flex-col gap-y-3">
+              <hr class="border-primaryColor" />
+              <h3 class="text-2xl font-bold">Want to learn</h3>
+              <ul class="list-none relative text-sm">
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  React
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Node
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  PHP
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Typescript
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Gatsby
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Accessibility
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JS: Local storage and cookies
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  JS: DOM manipulation
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  SEO
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Git
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Parcel
+                </li>
+                <li
+                  class="after:content-['-'] after:left-0 after:absolute ml-3"
+                >
+                  Figma
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="projects">
+        <h2>Recent projects</h2>
+        <p>
+          Since diving into frontend development in 2023, I've brought a range
+          of projects to life. Here's a snapshot of my accomplishments so far.
+        </p>
+        <div>
+          <article>
+            <h3>simple-editor</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+            <span>HTML</span><span>CSS</span><span>Tailwind</span
+            ><span>JS</span>
+            <a href="#">View demo</a>
+            <a href="#">Source code</a>
+          </article>
+          <article>
+            <h3>simple-editor</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+            <span>HTML</span><span>CSS</span><span>Tailwind</span
+            ><span>JS</span>
+            <a href="#">View demo</a>
+            <a href="#">Source code</a>
+          </article>
+          <article>
+            <h3>simple-editor</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+            <span>HTML</span><span>CSS</span><span>Tailwind</span
+            ><span>JS</span>
+            <a href="#">View demo</a>
+            <a href="#">Source code</a>
+          </article>
+          <article>
+            <h3>simple-editor</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+            <span>HTML</span><span>CSS</span><span>Tailwind</span
+            ><span>JS</span>
+            <a href="#">View demo</a>
+            <a href="#">Source code</a>
+          </article>
+          <article>
+            <h3>simple-editor</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+            <span>HTML</span><span>CSS</span><span>Tailwind</span
+            ><span>JS</span>
+            <a href="#">View demo</a>
+            <a href="#">Source code</a>
+          </article>
+        </div>
+      </section>
+      <section id="about">
+        <h2>After hours</h2>
+        <p>
+          Outside of my regular working hours, I delve into an array of
+          activities. Here's a glimpse into how I spend my after-hours.
+        </p>
+        <div>
+          <article>
+            <img src="#" alt="calisthenics" />
+            <h3>Calisthenics</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+          </article>
+          <article>
+            <img src="#" alt="video games" />
+            <h3>Video games</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+          </article>
+          <article>
+            <img src="#" alt="family" />
+            <h3>Family</h3>
+            <p>
+              Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
+              auctor, justo fringilla mauris sit amet nibh. Suspendisse
+              pulvinar, augue ac venenatis condimentum, sem libero volutpat...
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <h2>Let’s work together</h2>
+      <p>
+        I’m open for new opportunities. If you have one for me we should talk!
+      </p>
+      <button>krzykalinowski@gmail.com</button>
+      <p>or find me</p>
+      <div><i></i><i></i><i></i><i></i><i></i></div>
+    </footer>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
 </html>

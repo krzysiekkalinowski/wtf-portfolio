@@ -10,6 +10,7 @@ module.exports = {
         secondTextColor: '#9CA3AF',
         buttonColor: '#020916',
         borderColor: '#1F2937',
+        articleGradientBackground: "linear-gradient(325deg, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.1) 100%)",
       },
       fontFamily: {
         mainFontFamily: ['DM Sans', 'sans-serif'],

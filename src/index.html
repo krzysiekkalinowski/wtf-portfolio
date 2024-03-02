@@ -14,7 +14,7 @@
   </head>
 
   <body
-    class="font-mainFontFamily bg-backgroundColor text-textColor max-w-contentWidth m-auto px-6"
+    class="font-mainFontFamily bg-backgroundColor text-white max-w-contentWidth m-auto px-6"
   >
     <header
       class="sticky top-0 pt-20 z-10 md:pt-0 md:h-20 md:flex md:justify-end md:items-center bg-backgroundColor"
@@ -23,7 +23,7 @@
         <img src="img/logo.svg" alt="logo strony" class="h-10 w-10" />
         <div>
           <h1 class="text-xl text-primaryColor">Krzystof Kalinowski</h1>
-          <p class="text-xs text-secondTextColor">FRONTEND DEVELOPER</p>
+          <p class="text-xs text-gray-400">FRONTEND DEVELOPER</p>
         </div>
       </div>
       <button class="absolute right-4 top-6 z-2 md:hidden hamburger--js">
@@ -50,14 +50,14 @@
     <main>
       <section
         id="top"
-        class="flex flex-col items-grid gap-y-5 py-5 md:max-xl:grid md:max-2xl:grid-cols-2 md:max-2xl:gap-x-14 2xl:grid-cols-3 2xl:gap-x-36 2xl:py-16"
+        class="flex flex-col items-grid gap-y-5 py-5 md:flex-row md:max-xl:gap-x-14 xl:gap-x-24 xl:py-16"
       >
-        <div class="lg:col-span-2">
-          <h2 class="font-bold text-2xl mb-4 md:max-xl:text-3xl lg:text-5xl lg:leading-snug">
+        <div>
+          <h2 class="font-bold text-2xl mb-4 md:leading-snug md:max-xl:text-3xl xl:text-5xl">
             My name is Krzysiek and I’m an aspiring
             <span class="text-primaryColor">Frontend developer.</span>
           </h2>
-          <p class="text-secondTextColor font-medium mb-8 lg:text-2xl">
+          <p class="text-gray-400 font-medium mb-8 md:text-2xl 2xl:mb-16">
             You might be interested in checking the list of my
             <a href="#skills" class="text-white">skills</a>. Don’t forget to
             have a glimpse at my
@@ -65,7 +65,7 @@
             a new challenges so if you have one -
             <a href="#contact" class="text-white">contact</a> me 😊
           </p>
-          <div class="flex-col flex gap-y-4">
+          <div class="flex-col flex gap-y-4 xl:flex-row xl:gap-x-4">
             <a
               href="#contact"
               class="py-2 px-6 bg-primaryColor text-buttonColor font-bold rounded-2xl flex gap-x-3 w-max"
@@ -73,7 +73,7 @@
             >
             <a
               href="#skills"
-              class="py-2 px-6 bg-buttonColor text-primaryColor font-bold rounded-2xl border-borderColor border-2 flex gap-x-3 w-max"
+              class="py-2 px-6 bg-buttonColor text-primaryColor font-bold rounded-2xl border-gray-800 border-2 flex gap-x-3 w-max"
               ><img src="img/user-icon.svg" alt="user icon" />Get to know me</a
             >
           </div>
@@ -84,13 +84,15 @@
           class="rounded-xl rounded-tr-imgRadius order-first md:order-none"
         />
       </section>
-      <section id="skills" class="py-14 flex flex-col">
-        <h2 class="text-xl font-bold mb-4 text-secondTextColor">MY SKILLS</h2>
-        <p class="text-2xl font-medium mb-10 md:max-xl:text-3xl">
+      <section id="skills" class="py-14 flex flex-col md:grid md:grid-cols-3 md:gap-x-24 md:py-16">
+        <div class="md:col-span-2">
+        <h2 class="text-xl font-bold tracking-wider mb-4 text-gray-400">MY SKILLS</h2>
+        <p class="text-2xl font-medium mb-10 md:max-2xl:text-3xl  2xl:text-4xl">
           I've picked up some cool skills along the way, and I'm excited to
           share them with you. Check out what I can do below!
         </p>
-        <div class="flex flex-col gap-y-4 md:max-xl:grid md:max-xl:grid-cols-2 md:max-xl:gap-6">
+      </div>
+        <div class="flex flex-col gap-y-4 md:max-2xl:grid md:max-2xl:grid-cols-2 md:max-2xl:gap-6 md:row-start-2">
           <article
             class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
           >
@@ -307,7 +309,7 @@
         </div>
       </section>
       <section id="projects" class="py-14">
-        <h2 class="text-xl font-bold text-secondTextColor mb-4">
+        <h2 class="text-xl font-bold tracking-wider text-gray-400 mb-4">
           RECENT PROJECTS
         </h2>
         <p class="text-2xl font-medium mb-10 md:max-xl:text-3xl">
@@ -324,10 +326,10 @@
                 <span
                   class="inline-flex items-baseline gap-x-1 py-1 px-2 rounded-md bg-accentBackgroundColor"
                   ><img src="img/star.svg" />
-                  <p class="text-secondTextColor counter--js">27</p></span
+                  <p class="text-gray-400 counter--js">27</p></span
                 >
               </div>
-              <p class="text-xl leading-6 text-secondTextColor">
+              <p class="text-xl leading-6 text-gray-400">
                 Phasellus dolor. In dui magna, posuere eget, vestibulum et,
                 tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse
                 pulvinar, augue ac venenatis condimentum, sem libero volutpat...
@@ -367,10 +369,10 @@
                 <span
                   class="inline-flex items-baseline gap-x-1 py-1 px-2 rounded-md bg-accentBackgroundColor"
                   ><img src="img/star.svg" />
-                  <p class="text-secondTextColor counter--js">27</p></span
+                  <p class="text-gray-400 counter--js">27</p></span
                 >
               </div>
-              <p class="text-xl leading-6 text-secondTextColor">
+              <p class="text-xl leading-6 text-gray-400">
                 Phasellus dolor. In dui magna, posuere eget, vestibulum et,
                 tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse
                 pulvinar, augue ac venenatis condimentum, sem libero volutpat...
@@ -404,7 +406,7 @@
         </div>
       </section>
       <section id="about" class="py-14">
-        <h2 class="text-xl font-bold text-secondTextColor mb-4">AFTER HOURS</h2>
+        <h2 class="text-xl font-bold tracking-wider text-gray-400 mb-4">AFTER HOURS</h2>
         <p class="text-2xl font-medium mb-10 md:max-xl:text-3xl">
           Outside of my regular working hours, I delve into an array of
           activities. Here's a glimpse into how I spend my after-hours.
@@ -418,7 +420,7 @@
             />
             <div class="flex flex-col gap-y-1">
               <h3 class="font-bold text-2xl">Calisthenics</h3>
-              <p class="text-secondTextColor font-medium">
+              <p class="text-gray-400 font-medium">
                 I have been training in calisthenics, with varying periods of
                 breaks, since 2016 at the Jest Progress gym in Białystok.
               </p>
@@ -432,7 +434,7 @@
             />
             <div class="flex flex-col gap-y-1">
               <h3 class="font-bold text-2xl">Video Games</h3>
-              <p class="text-secondTextColor font-medium">
+              <p class="text-gray-400 font-medium">
                 Video games have been a part of my life since childhood. I
                 particularly enjoy creating and conquering empires in grand
                 strategy games.
@@ -447,7 +449,7 @@
             />
             <div class="flex flex-col gap-y-1">
               <h3 class="font-bold text-2xl">Celtics and Arsenal</h3>
-              <p class="text-secondTextColor font-medium">
+              <p class="text-gray-400 font-medium">
                 I regularly watch Premier League and NBA games. I have been an
                 Arsenal fan for over 20 years and have supported Boston since
                 2010.
@@ -459,7 +461,7 @@
     </main>
     <footer id="contact" class="py-14 flex flex-col items-center gap-4">
       <h2 class="text-white text-3xl font-bold">Let’s work together</h2>
-      <p class="text-secondTextColor text-center text-lg md:max-xl:text-3xl">
+      <p class="text-gray-400 text-center text-lg md:max-xl:text-3xl">
         I’m open for new opportunities. If you have one for me we should talk!
       </p>
       <a
@@ -467,7 +469,7 @@
         class="py-2 px-6 bg-primaryColor text-buttonColor font-bold rounded-2xl flex gap-x-3 w-max text-xl"
         >krzykalinowski@gmail.com</a
       >
-      <p class="text-secondTextColor text-center text-2xl">or find me</p>
+      <p class="text-gray-400 text-center text-2xl">or find me</p>
       <div class="flex justify-evenly w-full">
         <img
           src="img/github-footer-icon.svg"

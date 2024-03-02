@@ -41,7 +41,15 @@
             <a href="#projects">Projects</a>
           </li>
           <li class="mb-2 hover:text-primaryColor">
-            <a download href="#" class="flex gap-x-2 md:py-2 md:px-6 md:bg-primaryColor md:text-buttonColor md:rounded-2xl"><img src="img/resume-svg.svg" class="hidden md:block">Resumes</a>
+            <a
+              download
+              href="#"
+              class="flex gap-x-2 md:py-2 md:px-6 md:bg-primaryColor md:text-backgroundColor md:rounded-2xl"
+              ><img
+                src="img/resume-svg.svg"
+                class="hidden md:block"
+              />Resumes</a
+            >
           </li>
           <li><a href="#contact" class="md:">Contact</a></li>
         </ul>
@@ -50,14 +58,16 @@
     <main>
       <section
         id="top"
-        class="flex flex-col items-grid gap-y-5 py-5 md:flex-row md:max-xl:gap-x-14 xl:gap-x-24 xl:py-16"
+        class="flex flex-col items-grid gap-y-5 py-5 lg:flex-row lg:max-xl:gap-x-14 xl:gap-x-24 xl:py-16"
       >
         <div>
-          <h2 class="font-bold text-2xl mb-4 md:leading-snug md:max-xl:text-3xl xl:text-5xl">
+          <h2
+            class="font-bold text-2xl mb-4 lg:max-xl:text-3xl lg:max-xl:leading-snug xl:text-5xl xl:leading-snug"
+          >
             My name is Krzysiek and I’m an aspiring
             <span class="text-primaryColor">Frontend developer.</span>
           </h2>
-          <p class="text-gray-400 font-medium mb-8 md:text-2xl 2xl:mb-16">
+          <p class="text-gray-400 font-medium mb-8 lg:text-2xl lg:mb-16">
             You might be interested in checking the list of my
             <a href="#skills" class="text-white">skills</a>. Don’t forget to
             have a glimpse at my
@@ -68,12 +78,12 @@
           <div class="flex-col flex gap-y-4 xl:flex-row xl:gap-x-4">
             <a
               href="#contact"
-              class="py-2 px-6 bg-primaryColor text-buttonColor font-bold rounded-2xl flex gap-x-3 w-max"
+              class="py-2 px-4 bg-primaryColor text-backgroundColor font-bold rounded-2xl flex gap-x-3 items-center max-xl:w-max"
               ><img src="img/chat-icon.svg" alt="chat icon" />Get in touch</a
             >
             <a
               href="#skills"
-              class="py-2 px-6 bg-buttonColor text-primaryColor font-bold rounded-2xl border-gray-800 border-2 flex gap-x-3 w-max"
+              class="py-2 px-4 bg-backgroundColor text-primaryColor font-bold rounded-2xl border-gray-800 border-2 flex gap-x-3 items-center max-xl:w-max"
               ><img src="img/user-icon.svg" alt="user icon" />Get to know me</a
             >
           </div>
@@ -81,20 +91,29 @@
         <img
           src="img/kalinowski-cv.jpg"
           alt="Krzysztof Kalinowski"
-          class="rounded-xl rounded-tr-imgRadius order-first md:order-none"
+          class="rounded-xl rounded-tr-imgRadius order-first lg:order-none"
         />
       </section>
-      <section id="skills" class="py-14 flex flex-col md:grid md:grid-cols-3 md:gap-x-24 md:py-16">
+      <section
+        id="skills"
+        class="py-14 flex flex-col md:grid md:grid-cols-3 md:gap-x-24 md:py-16"
+      >
         <div class="md:col-span-2">
-        <h2 class="text-xl font-bold tracking-wider mb-4 text-gray-400">MY SKILLS</h2>
-        <p class="text-2xl font-medium mb-10 md:max-2xl:text-3xl  2xl:text-4xl">
-          I've picked up some cool skills along the way, and I'm excited to
-          share them with you. Check out what I can do below!
-        </p>
-      </div>
-        <div class="flex flex-col gap-y-4 md:max-2xl:grid md:max-2xl:grid-cols-2 md:max-2xl:gap-6 md:row-start-2">
+          <h2 class="text-xl font-bold tracking-wider mb-4 text-gray-400">
+            MY SKILLS
+          </h2>
+          <p
+            class="text-2xl font-medium mb-10 md:max-2xl:text-3xl 2xl:text-4xl"
+          >
+            I've picked up some cool skills along the way, and I'm excited to
+            share them with you. Check out what I can do below!
+          </p>
+        </div>
+        <div
+          class="flex flex-col gap-y-4 md:grid md:grid-cols-3 md:gap-6 md:row-start-2 md:col-span-3"
+        >
           <article
-            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow"
           >
             <img src="img/traingle.svg" alt="triangle" class="w-44 h-40" />
             <div class="flex flex-col gap-y-3">
@@ -165,7 +184,7 @@
             </div>
           </article>
           <article
-            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow"
           >
             <img src="img/circle.svg" alt="triangle" class="w-44 h-40" />
             <div class="flex flex-col gap-y-3">
@@ -236,7 +255,7 @@
             </div>
           </article>
           <article
-            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow"
           >
             <img src="img/hexagon.svg" alt="triangle" class="w-44 h-40" />
             <div class="flex flex-col gap-y-3">
@@ -312,15 +331,30 @@
         <h2 class="text-xl font-bold tracking-wider text-gray-400 mb-4">
           RECENT PROJECTS
         </h2>
-        <p class="text-2xl font-medium mb-10 md:max-xl:text-3xl">
+        <p class="text-2xl font-medium mb-10 md:max-2xl:text-3xl 2xl:text-4xl">
           Since diving into frontend development in 2023, I've brought a range
           of projects to life. Here's a snapshot of my accomplishments so far.
         </p>
-        <div class="flex flex-col gap-y-4  md:max-xl:grid md:max-xl:grid-cols-2 md:max-xl:gap-6">
+        <div
+          class="flex flex-col gap-y-4 lg:grid lg:grid-cols-2 lg:gap-6"
+        >
           <article
-            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+            class="rounded-xl overflow-hidden flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow"
           >
-            <div class="flex flex-col gap-y-4">
+            <div
+              class="h-11 bg-gradient-to-br from-white/10 to-white/5 flex p-4 gap-2"
+            >
+              <span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"
+              ></span
+              ><span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"
+              ></span
+              ><span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"
+              ></span>
+            </div>
+            <div class="flex flex-col gap-y-4 p-5">
               <div class="flex gap-x-4">
                 <h3 class="font-bold text-2xl">simple-editor</h3>
                 <span
@@ -347,23 +381,36 @@
                 >
               </div>
             </div>
-            <div class="flex flex-col gap-y-4">
+            <div class="flex flex-col gap-y-4 p-5">
               <a
                 href="#"
-                class="py-4 px-5 bg-buttonColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
+                class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
                 ><img src="img/demo-icon.svg" />View demo</a
               >
               <a
                 href="#"
-                class="py-4 px-5 bg-buttonColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
+                class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
                 ><img src="img/github-icon.svg" />Source code</a
               >
             </div>
           </article>
           <article
-            class="rounded-xl p-5 gap-y-10 flex flex-col bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow"
+            class="rounded-xl overflow-hidden flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow"
           >
-            <div class="flex flex-col gap-y-4">
+            <div
+              class="h-11 bg-gradient-to-br from-white/10 to-white/5 flex p-4 gap-2"
+            >
+              <span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"
+              ></span
+              ><span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"
+              ></span
+              ><span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"
+              ></span>
+            </div>
+            <div class="flex flex-col gap-y-4 p-5">
               <div class="flex gap-x-4">
                 <h3 class="font-bold text-2xl">simple-editor</h3>
                 <span
@@ -390,15 +437,15 @@
                 >
               </div>
             </div>
-            <div class="flex flex-col gap-y-4">
+            <div class="flex flex-col gap-y-4 p-5">
               <a
                 href="#"
-                class="py-4 px-5 bg-buttonColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
+                class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
                 ><img src="img/demo-icon.svg" />View demo</a
               >
               <a
                 href="#"
-                class="py-4 px-5 bg-buttonColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
+                class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"
                 ><img src="img/github-icon.svg" />Source code</a
               >
             </div>
@@ -406,12 +453,16 @@
         </div>
       </section>
       <section id="about" class="py-14">
-        <h2 class="text-xl font-bold tracking-wider text-gray-400 mb-4">AFTER HOURS</h2>
-        <p class="text-2xl font-medium mb-10 md:max-xl:text-3xl">
+        <h2 class="text-xl font-bold tracking-wider text-gray-400 mb-4">
+          AFTER HOURS
+        </h2>
+        <p class="text-2xl font-medium mb-10 md:max-2xl:text-3xl 2xl:text-4xl">
           Outside of my regular working hours, I delve into an array of
           activities. Here's a glimpse into how I spend my after-hours.
         </p>
-        <div class="flex flex-col gap-y-14  md:max-xl:grid md:max-xl:grid-cols-2 md:max-xl:gap-6">
+        <div
+          class="flex flex-col gap-y-14 md:grid md:grid-cols-3 md:gap-6"
+        >
           <article class="flex flex-col gap-y-6">
             <img
               src="img/calisthenics-cv.jpg"
@@ -466,11 +517,11 @@
       </p>
       <a
         href="mailto:krzykalinowski@gmail.com"
-        class="py-2 px-6 bg-primaryColor text-buttonColor font-bold rounded-2xl flex gap-x-3 w-max text-xl"
+        class="py-2 px-6 bg-primaryColor text-backgroundColor font-bold rounded-2xl flex gap-x-3 w-max text-xl"
         >krzykalinowski@gmail.com</a
       >
       <p class="text-gray-400 text-center text-2xl">or find me</p>
-      <div class="flex justify-evenly w-full">
+      <div class="flex justify-center gap-4">
         <img
           src="img/github-footer-icon.svg"
           class="p-4 bg-gradient-to-tl from-[rgba(255,255,255,0.04)] to-[rgba(255,255,255,0.1)] shadow-articleShadow rounded-imgRadius"

@@ -7,10 +7,6 @@ module.exports = {
         backgroundColor: '#020916',
         accentBackgroundColor: 'rgba(156, 163, 175, 0.1)',
         primaryColor: '#CEFF7E',
-        textColor: '#fff',
-        secondTextColor: '#9CA3AF',
-        buttonColor: '#020916',
-        borderColor: '#1F2937',
       },
       fontFamily: {
         mainFontFamily: ['DM Sans', 'sans-serif'],

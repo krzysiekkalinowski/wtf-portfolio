@@ -1,3 +1,12 @@
 import { hamburgerToggle } from "./hamburger.js";
+import { fetchRepositories } from "./github.js";
 
-hamburgerToggle();
+document.addEventListener('DOMContentLoaded', () => {
+    fetchRepositories();
+    hamburgerToggle();
+});
+
+
+
+
+

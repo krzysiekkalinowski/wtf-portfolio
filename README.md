@@ -9,7 +9,7 @@ Responsive Design: Ensures the portfolio looks great on any device, from mobile 
 Dynamic Project Showcase: Automatically updates with new projects using GitHub API, highlighting my latest work.
 Interactive Elements: Engages visitors with interactive components and smooth transitions for a better user experience.
 
-##Technology
+## Technology
 1. **HTML**
 2. **Tailwind CSS**
 3. **GitHub API**

@@ -18,7 +18,7 @@ export const fetchRepositories = () => {
 
             let tags = '';
 
-            for (tag of topics) {
+            for (let tag of topics) {
                 tags += `<span class="py-1 px-2 rounded-md bg-accentBackgroundColor">${tag}</span>`;
             }
 

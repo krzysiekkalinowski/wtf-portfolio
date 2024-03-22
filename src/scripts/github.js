@@ -23,8 +23,8 @@ export const fetchRepositories = () => {
             }
 
             const htmlString = `<article class="rounded-xl overflow-hidden flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow">
-                <div class="h-11 bg-gradient-to-br from-white/10 to-white/5 flex p-4 gap-2">
-                    <span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"></span>
+                <div class="h-11 bg-gradient-to-br from-white/10 to-white/5 flex p-4 gap-2 container--js">
+                    <span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"></span>
                 </div>
                 <div class="flex flex-col gap-y-4 p-5 grow justify-between">
                     <div class="flex gap-x-4 flex-wrap">

@@ -17,20 +17,20 @@
     class="font-mainFontFamily bg-backgroundColor text-white max-w-contentWidth m-auto px-6"
   >
     <header
-      class="sticky top-0 pt-20 z-10 md:pt-0 md:h-20 md:flex md:justify-end md:items-center bg-backgroundColor"
+      class="sticky top-0 pt-20 z-10 lg:pt-0 lg:h-20 lg:flex lg:justify-end lg:items-center bg-backgroundColor"
     >
       <div class="absolute left-4 top-5 flex gap-x-4">
         <img src="img/logo.svg" alt="logo strony" class="h-10 w-10" />
         <div>
-          <h1 class="text-xl text-primaryColor">Krzystof Kalinowski</h1>
+          <h1 class="text-base md:text-xl text-primaryColor">Krzystof Kalinowski</h1>
           <p class="text-xs text-gray-400">FRONTEND DEVELOPER</p>
         </div>
       </div>
-      <button class="absolute right-4 top-6 z-2 md:hidden hamburger--js">
+      <button class="absolute right-4 top-6 z-2 lg:hidden hamburger--js">
         <img src="img/hamburger.svg" class="w-8 h-8 z-2" />
       </button>
-      <nav class="p-4 hidden md:block z-2 menu--js">
-        <ul class="md:flex md: gap-x-10 items-center">
+      <nav class="p-4 hidden lg:block z-2 menu--js">
+        <ul class="lg:flex lg: gap-x-10 items-center">
           <li class="mb-2 hover:text-primaryColor">
             <a href="#about">About</a>
           </li>
@@ -44,10 +44,10 @@
             <a
               download
               href="#"
-              class="flex gap-x-2 md:py-2 md:px-6 md:bg-primaryColor md:text-backgroundColor md:rounded-2xl"
+              class="flex gap-x-2 lg:py-2 lg:px-6 lg:bg-primaryColor lg:text-backgroundColor lg:rounded-2xl lg:hover:bg-primaryColorHover transition-all duration-500"
               ><img
                 src="img/resume-svg.svg"
-                class="hidden md:block"
+                class="hidden w-6 h-6 lg:block"
               />Resumes</a
             >
           </li>
@@ -78,12 +78,12 @@
           <div class="flex-col flex gap-y-4 xl:flex-row xl:gap-x-4">
             <a
               href="#contact"
-              class="py-2 px-4 bg-primaryColor text-backgroundColor font-bold rounded-2xl flex gap-x-3 items-center max-xl:w-max"
+              class="py-2 px-4 bg-primaryColor text-backgroundColor font-bold rounded-2xl flex gap-x-3 items-center max-xl:w-max transition-all duration-500 hover:bg-primaryColorHover"
               ><img src="img/chat-icon.svg" alt="chat icon" />Get in touch</a
             >
             <a
-              href="#skills"
-              class="py-2 px-4 bg-backgroundColor text-primaryColor font-bold rounded-2xl border-gray-800 border-2 flex gap-x-3 items-center max-xl:w-max"
+              href="#about"
+              class="py-2 px-4 bg-backgroundColor text-primaryColor font-bold rounded-2xl border-gray-800 border-2 flex gap-x-3 items-center max-xl:w-max transition-all duration-500 hover:border-primaryColorHover"
               ><img src="img/user-icon.svg" alt="user icon" />Get to know me</a
             >
           </div>
@@ -91,7 +91,7 @@
         <img
           src="img/kalinowski-cv.jpg"
           alt="Krzysztof Kalinowski"
-          class="rounded-xl rounded-tr-imgRadius order-first lg:order-none"
+          class="rounded-xl rounded-tr-imgRadius order-first max-w-96 lg:order-none"
         />
       </section>
       <section
@@ -221,36 +221,6 @@
                 >
                   Accessibility
                 </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  JS: Local storage and cookies
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  JS: DOM manipulation
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  SEO
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  Git
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  Parcel
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  Figma
-                </li>
               </ul>
             </div>
           </article>
@@ -286,41 +256,6 @@
                   class="after:content-['-'] after:left-0 after:absolute ml-3"
                 >
                   Gatsby
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  Accessibility
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  JS: Local storage and cookies
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  JS: DOM manipulation
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  SEO
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  Git
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  Parcel
-                </li>
-                <li
-                  class="after:content-['-'] after:left-0 after:absolute ml-3"
-                >
-                  Figma
                 </li>
               </ul>
             </div>
@@ -405,7 +340,7 @@
       </p>
       <a
         href="mailto:krzykalinowski@gmail.com"
-        class="py-2 px-6 bg-primaryColor text-backgroundColor font-bold rounded-2xl flex gap-x-3 w-max text-xl"
+        class="py-2 px-6 bg-primaryColor text-backgroundColor font-bold rounded-2xl flex gap-x-3 w-max text-xl duration-500 hover:bg-primaryColorHover"
         >krzykalinowski@gmail.com</a
       >
       <p class="text-gray-400 text-center text-2xl">or find me</p>

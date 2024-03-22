@@ -7,6 +7,7 @@ module.exports = {
         backgroundColor: '#020916',
         accentBackgroundColor: 'rgba(156, 163, 175, 0.1)',
         primaryColor: '#CEFF7E',
+        primaryColorHover: '#a7ff18',
       },
       fontFamily: {
         mainFontFamily: ['DM Sans', 'sans-serif'],

@@ -1,4 +1,7 @@
-import { demoIcon } from '../img/demo-icon.svg'
+import demoIcon from "../img/demo-icon.svg";
+import githubIcon from "../img/github-icon.svg";
+import githubStar from "../img/star.svg"
+
 
 export const fetchRepositories = () => {
     const githubUser = "krzysiekkalinowski";
@@ -23,21 +26,21 @@ export const fetchRepositories = () => {
                 <div class="h-11 bg-gradient-to-br from-white/10 to-white/5 flex p-4 gap-2">
                     <span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50"></span>
                 </div>
-                <div class="flex flex-col gap-y-4 p-5">
-                    <div class="flex gap-x-4">
+                <div class="flex flex-col gap-y-4 p-5 grow justify-between">
+                    <div class="flex gap-x-4 flex-wrap">
                     <h3 class="font-bold text-2xl">${name}</h3>
-                    <span class="inline-flex items-baseline gap-x-1 py-1 px-2 rounded-md bg-accentBackgroundColor"><img src="img/star.svg" /><p class="text-gray-400 counter--js">${stargazers_count}</p></span>
+                    <span class="inline-flex items-baseline gap-x-1 py-1 px-2 rounded-md bg-accentBackgroundColor"><img src="${githubStar}" /><p class="text-gray-400 counter--js">${stargazers_count}</p></span>
                     </div>
                     <p class="text-xl leading-6 text-gray-400">
                     ${description}
                     </p>
-                    <div class="flex gap-x-1 flex-wrap">
+                    <div class="flex gap-1 flex-wrap">
                     ${tags}
                     </div>
                 </div>
                 <div class="flex flex-col gap-y-4 p-5">
-                    <a href="${homepage}" rel="nofollow noreferrer" target="_blank" class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"><img src="${demoIcon}" />View demo</a>
-                    <a href="${html_url}" rel="nofollow noreferrer" target="_blank" class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl"><img src="img/github-icon.svg" />Source code</a>
+                    <a href="${homepage}" rel="nofollow noreferrer" target="_blank" class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl border-gray-800 border-2 duration-500 hover:border-primaryColorHover hover:text-primaryColorHover"><img src="${demoIcon}" />View demo</a>
+                    <a href="${html_url}" rel="nofollow noreferrer" target="_blank" class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl border-gray-800 border-2 duration-500 hover:border-primaryColorHover hover:text-primaryColorHover"><img src="${githubIcon}" />Source code</a>
                 </div>
                 </article>`;
             if (homepage) {

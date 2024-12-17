@@ -1,28 +1,34 @@
-import demoIcon from "../img/demo-icon.svg";
-import githubIcon from "../img/github-icon.svg";
-import githubStar from "../img/star.svg"
-
+import demoIcon from '../img/demo-icon.svg';
+import githubIcon from '../img/github-icon.svg';
+import githubStar from '../img/star.svg';
 
 export const fetchRepositories = () => {
-    const githubUser = "krzysiekkalinowski";
-    const githubDirection = "desc";
-    const projectsContainer = document.querySelector(".projects--js");
+  const githubUser = 'krzysiekkalinowski';
+  const githubDirection = 'desc';
+  const projectsContainer = document.querySelector('.projects--js');
 
-    fetch(
-        `https://api.github.com/users/${githubUser}/repos?direction=${githubDirection}`
-      )
-        .then((response) => response.json())
-        .then((response) => {
-          for (let repository of response) {
-            const { name, html_url, description, topics, homepage, stargazers_count } = repository;
+  fetch(
+    `https://api.github.com/users/${githubUser}/repos?direction=${githubDirection}`
+  )
+    .then((response) => response.json())
+    .then((response) => {
+      for (let repository of response) {
+        const {
+          name,
+          html_url,
+          description,
+          topics,
+          homepage,
+          stargazers_count,
+        } = repository;
 
-            let tags = '';
+        let tags = '';
 
-            for (let tag of topics) {
-                tags += `<span class="py-1 px-2 rounded-md bg-accentBackgroundColor">${tag}</span>`;
-            }
+        for (let tag of topics) {
+          tags += `<span class="py-1 px-2 rounded-md bg-accentBackgroundColor">${tag}</span>`;
+        }
 
-            const htmlString = `<article class="rounded-xl overflow-hidden flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow">
+        const htmlString = `<article class="rounded-xl overflow-hidden flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow">
                 <div class="h-11 bg-gradient-to-br from-white/10 to-white/5 flex p-4 gap-2 container--js">
                     <span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"></span><span class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"></span>
                 </div>
@@ -43,12 +49,15 @@ export const fetchRepositories = () => {
                     <a href="${html_url}" rel="nofollow noreferrer" target="_blank" class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl border-gray-800 border-2 duration-500 hover:border-primaryColorHover hover:text-primaryColorHover"><img src="${githubIcon}" />Source code</a>
                 </div>
                 </article>`;
-            if (homepage) {
-                projectsContainer.insertAdjacentHTML('afterbegin', htmlString);
-            }
+        if (homepage && topics.includes('portfolio')) {
+          projectsContainer.insertAdjacentHTML('afterbegin', htmlString);
         }
+      }
     })
-    .catch(error => {
-        console.error('There has been a problem with your fetch operation:', error);
+    .catch((error) => {
+      console.error(
+        'There has been a problem with your fetch operation:',
+        error
+      );
     });
 };

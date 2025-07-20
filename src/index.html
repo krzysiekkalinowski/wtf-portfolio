@@ -17,7 +17,7 @@
     class="font-mainFontFamily bg-backgroundColor text-white max-w-contentWidth m-auto px-6"
   >
     <header
-      class="sticky top-0 pt-20 z-10 lg:pt-0 lg:h-20 lg:flex lg:justify-end lg:items-center bg-backgroundColor"
+      class="sticky top-0 pt-20 z-10 lg: gap-x-10 lg:pt-0 lg:h-20 lg:flex lg:justify-end lg:items-center bg-backgroundColor"
     >
       <div class="absolute left-4 top-5 flex gap-x-4">
         <img
@@ -32,6 +32,11 @@
           <p class="text-xs text-gray-400">FRONTEND DEVELOPER</p>
         </div>
       </div>
+       <div class="lg:flex lg:items-center lg:mb-2 lg:static absolute top-6 right-16">
+          <span class="text-sm text-primaryColor">EN</span>
+          <span class="text-gray-400 mx-2">|</span>
+          <a href="pl.html" class="text-sm hover:text-primaryColor">PL</a>
+        </div>
       <button class="absolute right-4 top-6 z-2 lg:hidden hamburger--js">
         <img src="img/hamburger.svg" class="w-8 h-8 z-2" />
       </button>
@@ -341,7 +346,52 @@
                 rel="nofollow noreferrer"
                 target="_blank"
                 class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl border-gray-800 border-2 duration-500 hover:border-primaryColorHover hover:text-primaryColorHover"
-                ><img src="img/demo-icon.svg" />View demo</a
+                ><img src="img/demo-icon.svg" />View website</a
+              >
+            </div>
+          </article>
+          <article
+            class="rounded-xl overflow-hidden flex flex-col bg-gradient-to-br from-white/10 to-white/5 shadow-articleShadow"
+          >
+            <div
+              class="h-11 bg-gradient-to-br from-white/10 to-white/5 flex p-4 gap-2 container--js"
+            >
+              <span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"
+              ></span
+              ><span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"
+              ></span
+              ><span
+                class="h-3 w-3 block rounded-imgRadius bg-backgroundColor/50 dot--js"
+              ></span>
+            </div>
+            <div class="flex flex-col gap-y-4 p-5 grow justify-between">
+              <div class="flex gap-x-4 flex-wrap">
+                <h3 class="font-bold text-2xl">KGW Podlasie</h3>
+              </div>
+              <p class="text-xl leading-6 text-gray-400">
+                A simple service website built on the WordPress platform, with a theme customized using bespoke CSS. The use of the CPTUI (Custom Post Type UI) plugin enabled the creation and management of custom content types, ensuring flexibility and ease of updates. The project's goal was to create a clear and readable site, guaranteeing intuitive navigation and seamless access to information for users.
+              </p>
+              <div class="flex gap-1 flex-wrap">
+                <span class="py-1 px-2 rounded-md bg-accentBackgroundColor"
+                  >wordpress</span
+                >
+                <span class="py-1 px-2 rounded-md bg-accentBackgroundColor"
+                  >css</span
+                >
+                <span class="py-1 px-2 rounded-md bg-accentBackgroundColor"
+                  >cptui</span
+                >
+              </div>
+            </div>
+            <div class="flex flex-col gap-y-4 p-5">
+              <a
+                href="https://kgwpodlaskie.pl/"
+                rel="nofollow noreferrer"
+                target="_blank"
+                class="py-4 px-5 bg-backgroundColor font-bold text-primaryColor flex gap-x-2 w-max rounded-xl border-gray-800 border-2 duration-500 hover:border-primaryColorHover hover:text-primaryColorHover"
+                ><img src="img/demo-icon.svg" />View website</a
               >
             </div>
           </article>
